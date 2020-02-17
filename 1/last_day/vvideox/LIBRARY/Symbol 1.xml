@@ -1,0 +1,61 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="Symbol 1" itemID="53e3e064-0000037f" lastModified="1407443567" lastUniqueIdentifier="1">
+  <timeline>
+    <DOMTimeline name="Symbol 1">
+      <layers>
+        <DOMLayer name="Layer 1" color="#4FFF4F" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMCompiledClipInstance libraryItemName="FLVPlayback" selected="true" uniqueID="1">
+                  <matrix>
+                    <Matrix a="3.99937438964844" d="3"/>
+                  </matrix>
+                  <dataBindingXML><![CDATA[<component metaDataFetched='true' schemaUrl='' schemaOperation='' sceneRootLabel='Scene 1' oldCopiedComponentPath='3.1'>
+</component>
+]]></dataBindingXML>
+                  <parametersAsXML><![CDATA[   <property id="align">
+      <Inspectable name="align" variable="align" category="" verbose="0" defaultValue="center" enumeration="center,top,left,bottom,right,topLeft,topRight,bottomLeft,bottomRight" type="List"/>
+   </property>
+   <property id="autoPlay">
+      <Inspectable name="autoPlay" variable="autoPlay" category="" verbose="0" defaultValue="false" type="Boolean"/>
+   </property>
+   <property id="cuePoints">
+      <Inspectable name="cuePoints" variable="cuePoints" category="" verbose="0" defaultValue="" type="Video Cue Points"/>
+   </property>
+   <property id="isLive">
+      <Inspectable name="isLive" variable="isLive" category="" verbose="0" defaultValue="false" type="Boolean"/>
+   </property>
+   <property id="preview">
+      <Inspectable name="preview" variable="preview" category="" verbose="0" defaultValue="None" type="Video Preview"/>
+   </property>
+   <property id="scaleMode">
+      <Inspectable name="scaleMode" variable="scaleMode" category="" verbose="0" defaultValue="maintainAspectRatio" enumeration="maintainAspectRatio,noScale,exactFit" type="List"/>
+   </property>
+   <property id="skin">
+      <Inspectable name="skin" variable="skin" category="" verbose="0" defaultValue="SkinOverAllNoFullNoCaption.swf" type="Video Skin"/>
+   </property>
+   <property id="skinAutoHide">
+      <Inspectable name="skinAutoHide" variable="skinAutoHide" category="" verbose="0" defaultValue="true" type="Boolean"/>
+   </property>
+   <property id="skinBackgroundAlpha">
+      <Inspectable name="skinBackgroundAlpha" variable="skinBackgroundAlpha" category="" verbose="0" defaultValue="0.5" type="Number"/>
+   </property>
+   <property id="skinBackgroundColor">
+      <Inspectable name="skinBackgroundColor" variable="skinBackgroundColor" category="" verbose="0" defaultValue="#00FF99" type="Color"/>
+   </property>
+   <property id="source">
+      <Inspectable name="source" variable="source" category="" verbose="0" defaultValue="D:\downloads\Халява, приди! - В ВУЗ не дуем - часть 2 - Уральские пельмени.mp4" type="Video Content Path"/>
+   </property>
+   <property id="volume">
+      <Inspectable name="volume" variable="volume" category="" verbose="0" defaultValue="0.3" type="Number"/>
+   </property>
+]]></parametersAsXML>
+                </DOMCompiledClipInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

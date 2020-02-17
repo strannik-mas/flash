@@ -1,0 +1,651 @@
+<DOMDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" currentTimeline="1" xflVersion="2.1" creatorInfo="Adobe Flash Professional CS5.5" platform="Windows" versionInfo="Saved by Adobe Flash Windows 11.5 build 349" majorVersion="11" minorVersion="5" buildNumber="349" nextSceneIdentifier="2" playOptionsPlayLoop="false" playOptionsPlayPages="false" playOptionsPlayFrameActions="false">
+     <media>
+          <DOMCompiledClipItem name="FLVPlayback" itemID="53e3a997-00000039" linkageExportForAS="true" linkageClassName="fl.video.FLVPlayback" sourceExternalFilepath="./LIBRARY/FLVPlayback" sourceLastImported="1267834356" tooltip="FLVPlayback" customIconID="0" actionscriptClass="fl.video.FLVPlayback" livePreviewScmHRef="po8a39ydni.swf" livePreviewScmSourceFilename="C:\Users\странник\AppData\Local\Adobe\Flash CS5.5\en_US\Configuration\TMPpo89o9ydni..swf" persistLivePreview11="true" livePreview11ScmHRef="po8a39ydni1.swf" livePreview11ScmSourceFilename="C:\Users\странник\AppData\Local\Adobe\Flash CS5.5\en_US\Configuration\TMPpo8729ydni..swf" editFrameIndex="1" requiredMinimumPlayerVersion="0" requiredMinimumASVersion="0" parametersAreLocked="true" swcPath="FLVPlayback.xml" rootSymbolLinkageID="fl.video.FLVPlayback" movieRectRight="6401" movieRectBottom="4800" playerVersion="9" actionscriptVersion="3" hashKey="5hQS0VF2RpEUrBqYgohhO.">
+               <parametersAsXML><![CDATA[   <property id="align">
+      <Inspectable name="align" variable="align" category="" verbose="0" defaultValue="center" enumeration="center,top,left,bottom,right,topLeft,topRight,bottomLeft,bottomRight" type="List"/>
+   </property>
+   <property id="autoPlay">
+      <Inspectable name="autoPlay" variable="autoPlay" category="" verbose="0" defaultValue="true" type="Boolean"/>
+   </property>
+   <property id="cuePoints">
+      <Inspectable name="cuePoints" variable="cuePoints" category="" verbose="0" defaultValue="" type="Video Cue Points"/>
+   </property>
+   <property id="isLive">
+      <Inspectable name="isLive" variable="isLive" category="" verbose="0" defaultValue="false" type="Boolean"/>
+   </property>
+   <property id="preview">
+      <Inspectable name="preview" variable="preview" category="" verbose="0" defaultValue="" type="Video Preview"/>
+   </property>
+   <property id="scaleMode">
+      <Inspectable name="scaleMode" variable="scaleMode" category="" verbose="0" defaultValue="maintainAspectRatio" enumeration="maintainAspectRatio,noScale,exactFit" type="List"/>
+   </property>
+   <property id="skin">
+      <Inspectable name="skin" variable="skin" category="" verbose="0" defaultValue="" type="Video Skin"/>
+   </property>
+   <property id="skinAutoHide">
+      <Inspectable name="skinAutoHide" variable="skinAutoHide" category="" verbose="0" defaultValue="false" type="Boolean"/>
+   </property>
+   <property id="skinBackgroundAlpha">
+      <Inspectable name="skinBackgroundAlpha" variable="skinBackgroundAlpha" category="" verbose="0" defaultValue="0.85" type="Number"/>
+   </property>
+   <property id="skinBackgroundColor">
+      <Inspectable name="skinBackgroundColor" variable="skinBackgroundColor" category="" verbose="0" defaultValue="#47ABCB" type="Color"/>
+   </property>
+   <property id="source">
+      <Inspectable name="source" variable="source" category="" verbose="0" defaultValue="" type="Video Content Path"/>
+   </property>
+   <property id="volume">
+      <Inspectable name="volume" variable="volume" category="" verbose="0" defaultValue="1" type="Number"/>
+   </property>
+]]></parametersAsXML>
+               <classProperties><![CDATA[<component id="fl/video/FLVPlayback" class="fl.video.FLVPlayback" livePreviewClass="FLVPlaybackStageLivePreview" modified="1267834356096">
+<movieBounds xmin="0" xmax="6400" ymin="0" ymax="4800" />
+<classDefs>
+	<classDef id="fl.video.CuePointType"/>
+	<classDef id="fl.video.ParseResults"/>
+	<classDef id="fl.video.VideoPlayerState"/>
+	<classDef id="fl.video.NCManagerNativeShim"/>
+	<classDef id="fl.video.VideoError"/>
+	<classDef id="fl.video.VideoEvent"/>
+	<classDef id="fl.video.AutoLayoutEvent"/>
+	<classDef id="fl.video.SkinErrorEvent"/>
+	<classDef id="fl.video.VolumeBarAccImpl"/>
+	<classDef id="fl.video.FPADManager"/>
+	<classDef id="fl.video.SeekBarAccImpl"/>
+	<classDef id="fl.video.VideoScaleMode"/>
+	<classDef id="fl.video.ReconnectClient"/>
+	<classDef id="fl.video.ConnectClient"/>
+	<classDef id="fl.livepreview.LivePreviewParent"/>
+	<classDef id="fl.video.NCManagerNative"/>
+	<classDef id="fl.video.VideoPlayerClient"/>
+	<classDef id="fl.video.LayoutEvent"/>
+	<classDef id="fl.video.Icon"/>
+	<classDef id="fl.video.ControlData"/>
+	<classDef id="fl.video.VideoState"/>
+	<classDef id="fl.video.QueuedCommand"/>
+	<classDef id="fl.video.VideoProgressEvent"/>
+	<classDef id="fl.video.VideoAlign"/>
+	<classDef id="fl.video.CuePointManager"/>
+	<classDef id="fl.video.IVPEvent"/>
+	<classDef id="fl.video.VideoPlayer"/>
+	<classDef id="fl.video.UIManager"/>
+	<classDef id="fl.video.ConnectClientNative"/>
+	<classDef id="fl.video.INCManager"/>
+	<classDef id="fl.video.SoundEvent"/>
+	<classDef id="fl.video.FLVPlayback"/>
+	<classDef id="fl.video.MetadataEvent"/>
+	<classDef id="fl.video.SMILManager"/>
+	<classDef id="fl.video.NCManager"/>
+</classDefs>
+<class id="fl.video.FLVPlayback" >
+	<LivePreviewVersion param1="1" />
+	<RequiresDataBinding param1="true" />
+	<IconFile param1="FLVPlayback.png" />
+	<Event param1="soundUpdate" type="fl.video.SoundEvent" />
+	<Event param1="stoppedStateEntered" type="fl.video.VideoEvent" />
+	<Event param1="stateChange" type="fl.video.VideoEvent" />
+	<Event param1="skinLoaded" type="fl.video.VideoEvent" />
+	<Event param1="skinError" type="fl.video.SkinErrorEvent" />
+	<Event param1="seeked" type="fl.video.VideoEvent" />
+	<Event param1="scrubStart" type="fl.video.VideoEvent" />
+	<Event param1="scrubFinish" type="fl.video.VideoEvent" />
+	<Event param1="rewind" type="fl.video.VideoEvent" />
+	<Event param1="layout" type="fl.video.LayoutEvent" />
+	<Event param1="ready" type="fl.video.VideoEvent" />
+	<Event param1="progress" type="fl.video.VideoProgressEvent" />
+	<Event param1="playheadUpdate" type="fl.video.VideoEvent" />
+	<Event param1="playingStateEntered" type="fl.video.VideoEvent" />
+	<Event param1="pausedStateEntered" type="fl.video.VideoEvent" />
+	<Event param1="metadataReceived" type="fl.video.MetadataEvent" />
+	<Event param1="fastForward" type="fl.video.VideoEvent" />
+	<Event param1="cuePoint" type="fl.video.MetadataEvent" />
+	<Event param1="complete" type="fl.video.VideoEvent" />
+	<Event param1="close" type="fl.video.VideoEvent" />
+	<Event param1="bufferingStateEntered" type="fl.video.VideoEvent" />
+	<Event param1="autoRewound" type="fl.video.VideoEvent" />
+	<Event param1="autoLayout" type="fl.video.AutoLayoutEvent" />
+	<__go_to_ctor_definition_help file="C:\devsrc\flashfarm\media_frameworks\branches\FLVPlayback_AS3_LIVE\FLVPlayback\..\fl\video\FLVPlayback.as" pos="30587" />
+	<method id="playheadPercentage" returnType="Number" isProperty="true" permissions="readwrite">
+	</method>
+	<method id="activeVideoPlayerIndex" returnType="uint" isProperty="true" permissions="readwrite">
+	</method>
+	<method id="align" returnType="String" isProperty="true" permissions="readwrite">
+		<Inspectable type="List" enumeration="center,top,left,bottom,right,topLeft,topRight,bottomLeft,bottomRight" defaultValue="center" />
+	</method>
+	<method id="autoPlay" returnType="Boolean" isProperty="true" permissions="readwrite">
+		<Inspectable defaultValue="true" />
+	</method>
+	<method id="autoRewind" returnType="Boolean" isProperty="true" permissions="readwrite">
+	</method>
+	<method id="bitrate" returnType="Number" isProperty="true" permissions="readwrite">
+	</method>
+	<method id="buffering" returnType="Boolean" isProperty="true" permissions="readonly">
+	</method>
+	<method id="bufferingBar" returnType="Sprite" isProperty="true" permissions="readwrite">
+	</method>
+	<method id="bufferingBarHidesAndDisablesOthers" returnType="Boolean" isProperty="true" permissions="readwrite">
+	</method>
+	<method id="backButton" returnType="Sprite" isProperty="true" permissions="readwrite">
+	</method>
+	<method id="bufferTime" returnType="Number" isProperty="true" permissions="readwrite">
+	</method>
+	<method id="bytesLoaded" returnType="uint" isProperty="true" permissions="readonly">
+	</method>
+	<method id="bytesTotal" returnType="uint" isProperty="true" permissions="readonly">
+	</method>
+	<method id="source" returnType="String" isProperty="true" permissions="readwrite">
+		<Inspectable type="Video Content Path" />
+	</method>
+	<method id="forwardButton" returnType="Sprite" isProperty="true" permissions="readwrite">
+	</method>
+	<method id="fullScreenBackgroundColor" returnType="uint" isProperty="true" permissions="readwrite">
+	</method>
+	<method id="fullScreenButton" returnType="Sprite" isProperty="true" permissions="readwrite">
+	</method>
+	<method id="fullScreenSkinDelay" returnType="int" isProperty="true" permissions="readwrite">
+	</method>
+	<method id="fullScreenTakeOver" returnType="Boolean" isProperty="true" permissions="readwrite">
+	</method>
+	<method id="height" returnType="Number" isProperty="true" permissions="readwrite">
+	</method>
+	<method id="idleTimeout" returnType="Number" isProperty="true" permissions="readwrite">
+	</method>
+	<method id="isRTMP" returnType="Boolean" isProperty="true" permissions="readonly">
+	</method>
+	<method id="isLive" returnType="Boolean" isProperty="true" permissions="readwrite">
+		<Inspectable defaultValue="false" />
+	</method>
+	<method id="metadata" returnType="Object" isProperty="true" permissions="readonly">
+	</method>
+	<method id="metadataLoaded" returnType="Boolean" isProperty="true" permissions="readonly">
+	</method>
+	<method id="muteButton" returnType="Sprite" isProperty="true" permissions="readwrite">
+	</method>
+	<method id="ncMgr" returnType="INCManager" isProperty="true" permissions="readonly">
+	</method>
+	<method id="pauseButton" returnType="Sprite" isProperty="true" permissions="readwrite">
+	</method>
+	<method id="paused" returnType="Boolean" isProperty="true" permissions="readonly">
+	</method>
+	<method id="playButton" returnType="Sprite" isProperty="true" permissions="readwrite">
+	</method>
+	<method id="playheadTime" returnType="Number" isProperty="true" permissions="readwrite">
+	</method>
+	<method id="playheadUpdateInterval" returnType="Number" isProperty="true" permissions="readwrite">
+	</method>
+	<method id="playing" returnType="Boolean" isProperty="true" permissions="readonly">
+	</method>
+	<method id="playPauseButton" returnType="Sprite" isProperty="true" permissions="readwrite">
+	</method>
+	<method id="preferredHeight" returnType="int" isProperty="true" permissions="readonly">
+	</method>
+	<method id="preferredWidth" returnType="int" isProperty="true" permissions="readonly">
+	</method>
+	<method id="progressInterval" returnType="Number" isProperty="true" permissions="readwrite">
+	</method>
+	<method id="registrationX" returnType="Number" isProperty="true" permissions="readwrite">
+	</method>
+	<method id="registrationY" returnType="Number" isProperty="true" permissions="readwrite">
+	</method>
+	<method id="registrationWidth" returnType="Number" isProperty="true" permissions="readwrite">
+	</method>
+	<method id="registrationHeight" returnType="Number" isProperty="true" permissions="readwrite">
+	</method>
+	<method id="scaleMode" returnType="String" isProperty="true" permissions="readwrite">
+		<Inspectable type="List" enumeration="maintainAspectRatio,noScale,exactFit" defaultValue="maintainAspectRatio" />
+	</method>
+	<method id="scaleX" returnType="Number" isProperty="true" permissions="readwrite">
+	</method>
+	<method id="scaleY" returnType="Number" isProperty="true" permissions="readwrite">
+	</method>
+	<method id="scrubbing" returnType="Boolean" isProperty="true" permissions="readonly">
+	</method>
+	<method id="seekBar" returnType="Sprite" isProperty="true" permissions="readwrite">
+	</method>
+	<method id="seekBarInterval" returnType="Number" isProperty="true" permissions="readwrite">
+	</method>
+	<method id="seekBarScrubTolerance" returnType="Number" isProperty="true" permissions="readwrite">
+	</method>
+	<method id="seekToPrevOffset" returnType="Number" isProperty="true" permissions="readwrite">
+	</method>
+	<method id="skin" returnType="String" isProperty="true" permissions="readwrite">
+		<Inspectable type="Video Skin" />
+	</method>
+	<method id="skinAutoHide" returnType="Boolean" isProperty="true" permissions="readwrite">
+		<Inspectable defaultValue="false" />
+	</method>
+	<method id="skinBackgroundAlpha" returnType="Number" isProperty="true" permissions="readwrite">
+		<Inspectable defaultValue="0.85" />
+	</method>
+	<method id="skinBackgroundColor" returnType="uint" isProperty="true" permissions="readwrite">
+		<Inspectable type="Color" defaultValue="#47ABCB" />
+	</method>
+	<method id="skinFadeTime" returnType="int" isProperty="true" permissions="readwrite">
+	</method>
+	<method id="skinScaleMaximum" returnType="Number" isProperty="true" permissions="readwrite">
+	</method>
+	<method id="soundTransform" returnType="SoundTransform" isProperty="true" permissions="readwrite">
+	</method>
+	<method id="state" returnType="String" isProperty="true" permissions="readonly">
+	</method>
+	<method id="stateResponsive" returnType="Boolean" isProperty="true" permissions="readonly">
+	</method>
+	<method id="stopButton" returnType="Sprite" isProperty="true" permissions="readwrite">
+	</method>
+	<method id="stopped" returnType="Boolean" isProperty="true" permissions="readonly">
+	</method>
+	<method id="totalTime" returnType="Number" isProperty="true" permissions="readwrite">
+	</method>
+	<method id="visibleVideoPlayerIndex" returnType="uint" isProperty="true" permissions="readwrite">
+	</method>
+	<method id="volume" returnType="Number" isProperty="true" permissions="readwrite">
+		<Inspectable defaultValue="1" />
+	</method>
+	<method id="volumeBar" returnType="Sprite" isProperty="true" permissions="readwrite">
+	</method>
+	<method id="volumeBarInterval" returnType="Number" isProperty="true" permissions="readwrite">
+	</method>
+	<method id="volumeBarScrubTolerance" returnType="Number" isProperty="true" permissions="readwrite">
+	</method>
+	<method id="width" returnType="Number" isProperty="true" permissions="readwrite">
+	</method>
+	<method id="x" returnType="Number" isProperty="true" permissions="readwrite">
+	</method>
+	<method id="y" returnType="Number" isProperty="true" permissions="readwrite">
+	</method>
+	<method id="endTabIndex" returnType="int" isProperty="true" permissions="readonly">
+	</method>
+	<method id="startTabIndex" returnType="int" isProperty="true" permissions="readonly">
+	</method>
+	<method id="preview" returnType="String" isProperty="true" permissions="writeonly">
+		<Inspectable type="Video Preview" />
+	</method>
+	<method id="componentInspectorSetting" returnType="Boolean" isProperty="true" permissions="writeonly">
+	</method>
+	<method id="cuePoints" returnType="Array" isProperty="true" permissions="writeonly">
+		<Inspectable type="Video Cue Points" />
+	</method>
+	<method id="boundingBox_mc" returnType="DisplayObject" isProperty="true" permissions="readwrite">
+	</method>
+	<method id="setSize" returnType="void" isProperty="false">
+	</method>
+	<method id="setScale" returnType="void" isProperty="false">
+	</method>
+	<method id="load" returnType="void" isProperty="false">
+	</method>
+	<method id="play" returnType="void" isProperty="false">
+	</method>
+	<method id="playWhenEnoughDownloaded" returnType="void" isProperty="false">
+	</method>
+	<method id="pause" returnType="void" isProperty="false">
+	</method>
+	<method id="stop" returnType="void" isProperty="false">
+	</method>
+	<method id="seek" returnType="void" isProperty="false">
+	</method>
+	<method id="seekSeconds" returnType="void" isProperty="false">
+	</method>
+	<method id="seekPercent" returnType="void" isProperty="false">
+	</method>
+	<method id="seekToNavCuePoint" returnType="void" isProperty="false">
+	</method>
+	<method id="seekToNextNavCuePoint" returnType="void" isProperty="false">
+	</method>
+	<method id="seekToPrevNavCuePoint" returnType="void" isProperty="false">
+	</method>
+	<method id="addASCuePoint" returnType="Object" isProperty="false">
+	</method>
+	<method id="removeASCuePoint" returnType="Object" isProperty="false">
+	</method>
+	<method id="findCuePoint" returnType="Object" isProperty="false">
+	</method>
+	<method id="findNearestCuePoint" returnType="Object" isProperty="false">
+	</method>
+	<method id="findNextCuePointWithName" returnType="Object" isProperty="false">
+	</method>
+	<method id="setFLVCuePointEnabled" returnType="Number" isProperty="false">
+	</method>
+	<method id="isFLVCuePointEnabled" returnType="Boolean" isProperty="false">
+	</method>
+	<method id="bringVideoPlayerToFront" returnType="void" isProperty="false">
+	</method>
+	<method id="getVideoPlayer" returnType="VideoPlayer" isProperty="false">
+	</method>
+	<method id="closeVideoPlayer" returnType="void" isProperty="false">
+	</method>
+	<method id="enterFullScreenDisplayState" returnType="void" isProperty="false">
+	</method>
+	<method id="assignTabIndexes" returnType="int" isProperty="false">
+	</method>
+	<method id="FLVPlayback" isConstructor="true" isProperty="false">
+	</method>
+</class><livePreview class="FLVPlaybackStageLivePreview">
+<movieBounds xmin="0" xmax="6401" ymin="0" ymax="4800" />
+<classDefs>
+	<classDef id="fl.livepreview.IEditContextV1"/>
+	<classDef id="fl.livepreview.IPreviewInterface"/>
+	<classDef id="fl.video.CuePointType"/>
+	<classDef id="fl.video.VideoPlayerState"/>
+	<classDef id="fl.video.ControlData"/>
+	<classDef id="fl.video.CuePointManager"/>
+	<classDef id="fl.video.UIManager"/>
+	<classDef id="fl.video.INCManager"/>
+	<classDef id="fl.video.VideoState"/>
+	<classDef id="fl.livepreview.EditContextFlags"/>
+	<classDef id="fl.video.VideoScaleMode"/>
+	<classDef id="fl.video.QueuedCommand"/>
+	<classDef id="fl.video.IVPEvent"/>
+	<classDef id="fl.video.ParseResults"/>
+	<classDef id="fl.video.SMILManager"/>
+	<classDef id="fl.video.FPADManager"/>
+	<classDef id="fl.video.VideoAlign"/>
+	<classDef id="fl.video.ConnectClient"/>
+	<classDef id="fl.video.ReconnectClient"/>
+	<classDef id="fl.video.VideoPlayerClient"/>
+	<classDef id="fl.video.LayoutEvent"/>
+	<classDef id="fl.video.SoundEvent"/>
+	<classDef id="fl.video.VolumeBarAccImpl"/>
+	<classDef id="fl.video.SeekBarAccImpl"/>
+	<classDef id="fl.livepreview.IVideoInterfaceV1"/>
+	<classDef id="fl.video.VideoError"/>
+	<classDef id="UIManagerStage"/>
+	<classDef id="fl.video.NCManager"/>
+	<classDef id="fl.video.VideoEvent"/>
+	<classDef id="fl.video.MetadataEvent"/>
+	<classDef id="fl.video.VideoProgressEvent"/>
+	<classDef id="fl.video.AutoLayoutEvent"/>
+	<classDef id="fl.video.SkinErrorEvent"/>
+	<classDef id="fl.video.VideoPlayer"/>
+	<classDef id="FLVPlaybackStageLivePreview"/>
+	<classDef id="fl.stage.video.StopButtonDown"/>
+	<classDef id="fl.stage.video.StopButtonNormal"/>
+	<classDef id="fl.stage.video.StopButtonOver"/>
+	<classDef id="fl.video.FLVPlayback"/>
+	<classDef id="fl.stage.video.ComponentVersionView"/>
+	<classDef id="fl.stage.video.BackgroundBox"/>
+	<classDef id="FLVPlaybackStage"/>
+	<classDef id="fl.livepreview.LivePreviewParent"/>
+	<classDef id="fl.video.Icon"/>
+</classDefs>
+<class id="FLVPlaybackStageLivePreview" >
+	<method id="width" returnType="Number" isProperty="true" permissions="readwrite">
+	</method>
+	<method id="height" returnType="Number" isProperty="true" permissions="readwrite">
+	</method>
+	<method id="source" returnType="String" isProperty="true" permissions="readwrite">
+	</method>
+	<method id="isLive" returnType="Boolean" isProperty="true" permissions="readwrite">
+	</method>
+	<method id="volume" returnType="Number" isProperty="true" permissions="readwrite">
+	</method>
+	<method id="align" returnType="String" isProperty="true" permissions="readwrite">
+	</method>
+	<method id="skinAutoHide" returnType="Boolean" isProperty="true" permissions="readwrite">
+	</method>
+	<method id="scaleMode" returnType="String" isProperty="true" permissions="readwrite">
+	</method>
+	<method id="autoPlay" returnType="Boolean" isProperty="true" permissions="readwrite">
+	</method>
+	<method id="skin" returnType="String" isProperty="true" permissions="readwrite">
+	</method>
+	<method id="skinBackgroundAlpha" returnType="Number" isProperty="true" permissions="readwrite">
+	</method>
+	<method id="skinBackgroundColor" returnType="uint" isProperty="true" permissions="readwrite">
+	</method>
+	<method id="DocumentRoot" returnType="String" isProperty="true" permissions="writeonly">
+	</method>
+	<method id="FullPathSourceFromRelativePath" returnType="String" isProperty="true" permissions="writeonly">
+	</method>
+	<method id="avatar_mc" returnType="DisplayObject" isProperty="true" permissions="readwrite">
+	</method>
+	<method id="caPreviewClass" returnType="ComponentVersionView" isProperty="true" permissions="readwrite">
+	</method>
+	<method id="createButtonsOverlay" returnType="void" isProperty="false">
+	</method>
+	<method id="destroyButtonsOverlay" returnType="void" isProperty="false">
+	</method>
+	<method id="SetFLVplaybackPlayheadUpdateTimer" returnType="void" isProperty="false">
+	</method>
+	<method id="initFLVplaybackPlayheadUpdateTimer" returnType="void" isProperty="false">
+	</method>
+	<method id="stopFLVplaybackPlayheadUpdateTimer" returnType="void" isProperty="false">
+	</method>
+	<method id="onFLVplaybackPlayheadUpdateTimer" returnType="void" isProperty="false">
+	</method>
+	<method id="startFLVplaybackRemotePreloadBufferingTimer" returnType="void" isProperty="false">
+	</method>
+	<method id="stopFLVplaybackRemotePreloadBufferingTimer" returnType="void" isProperty="false">
+	</method>
+	<method id="onFLVplaybackRemotePreloadBufferingTimer" returnType="void" isProperty="false">
+	</method>
+	<method id="FileExist" returnType="Boolean" isProperty="false">
+	</method>
+	<method id="setSize" returnType="void" isProperty="false">
+	</method>
+	<method id="draw" returnType="void" isProperty="false">
+	</method>
+	<method id="setIPreviewInterface" returnType="void" isProperty="false">
+	</method>
+	<method id="designTimeEdit" returnType="Boolean" isProperty="false">
+	</method>
+	<method id="load" returnType="void" isProperty="false">
+	</method>
+	<method id="play" returnType="void" isProperty="false">
+	</method>
+	<method id="pause" returnType="void" isProperty="false">
+	</method>
+	<method id="stop" returnType="void" isProperty="false">
+	</method>
+	<method id="seek" returnType="void" isProperty="false">
+	</method>
+	<method id="seekVideo" returnType="void" isProperty="false">
+	</method>
+	<method id="seekSeconds" returnType="void" isProperty="false">
+	</method>
+	<method id="startSeek" returnType="Boolean" isProperty="false">
+	</method>
+	<method id="stopSeek" returnType="void" isProperty="false">
+	</method>
+	<method id="setDocumentRoot" returnType="void" isProperty="false">
+	</method>
+	<method id="ResetSource" returnType="void" isProperty="false">
+	</method>
+	<method id="DisableSetSource" returnType="void" isProperty="false">
+	</method>
+	<method id="EnableSetSource" returnType="void" isProperty="false">
+	</method>
+	<method id="loadPreview" returnType="void" isProperty="false">
+	</method>
+	<method id="unloadPreview" returnType="void" isProperty="false">
+	</method>
+	<method id="close" returnType="void" isProperty="false">
+	</method>
+	<method id="Mute" returnType="void" isProperty="false">
+	</method>
+	<method id="grabBitmap" returnType="Boolean" isProperty="false">
+	</method>
+	<method id="FLVPlaybackStageLivePreview" isConstructor="true" isProperty="false">
+	</method>
+</class></livePreview>
+</component>
+]]></classProperties>
+               <customIcon>
+                    <CustomIcon rowByteCount="72" colorDepth="32" width="18" height="18" frameRight="360" frameBottom="360" isTransparent="true" href="po8az9ydni.dat"/>
+               </customIcon>
+               <SwcItem name="fl.video.FLVPlayback" version="1267834356" isTopLevel="true"/>
+          </DOMCompiledClipItem>
+     </media>
+     <symbols>
+          <Include href="Symbol 1.xml" loadImmediate="false" itemID="53e3e064-0000037f" lastModified="1407443567"/>
+          <Include href="Symbol 2.xml" loadImmediate="false" itemID="53e3e584-0000038b" lastModified="1407444356"/>
+     </symbols>
+     <timelines>
+          <DOMTimeline name="Scene 1">
+               <layers>
+                    <DOMLayer name="Layer 1" color="#4FFF4F" current="true" isSelected="true">
+                         <frames>
+                              <DOMFrame index="0" keyMode="9728">
+                                   <elements>
+                                        <DOMSymbolInstance libraryItemName="Symbol 1" centerPoint3DX="199.95" centerPoint3DY="129.2">
+                                             <matrix>
+                                                  <Matrix a="0.306854248046875" b="-0.059417724609375" c="0.059417724609375" d="0.306854248046875" tx="-18.05" ty="56.9"/>
+                                             </matrix>
+                                             <transformationPoint>
+                                                  <Point x="640.1" y="359.9"/>
+                                             </transformationPoint>
+                                        </DOMSymbolInstance>
+                                        <DOMSymbolInstance libraryItemName="Symbol 2" matrix3D="0.358367919921875 0.636700212955475 0.682777583599091 0 0.933580458164215 -0.244406297802925 -0.262093722820282 0 0 0.731353759765625 -0.681998252868652 0 -1024.0322265625 3122.60375976563 -3754.78881835938 1" rotationX="227" rotationZ="-69" centerPoint3DX="402.1" centerPoint3DY="331.2">
+                                             <matrix>
+                                                  <Matrix a="0.16522216796875" b="0.0953826904296875" c="-0.0953826904296875" d="0.16522216796875" tx="402.1" ty="331.3"/>
+                                             </matrix>
+                                             <transformationPoint>
+                                                  <Point/>
+                                             </transformationPoint>
+                                        </DOMSymbolInstance>
+                                        <DOMStaticText width="120.85" height="13.45">
+                                             <matrix>
+                                                  <Matrix tx="441.45" ty="39.65"/>
+                                             </matrix>
+                                             <textRuns>
+                                                  <DOMTextRun>
+                                                       <characters></characters>
+                                                       <textAttrs>
+                                                            <DOMTextAttrs aliasText="false" rotation="true" lineSpacing="1.65" face="TimesNewRomanPSMT" fillColor="#0066CC"/>
+                                                       </textAttrs>
+                                                  </DOMTextRun>
+                                             </textRuns>
+                                        </DOMStaticText>
+                                        <DOMStaticText selected="true" width="100.45" height="59.8">
+                                             <matrix>
+                                                  <Matrix tx="454" ty="66.35"/>
+                                             </matrix>
+                                             <textRuns>
+                                                  <DOMTextRun>
+                                                       <characters>fgfgf</characters>
+                                                       <textAttrs>
+                                                            <DOMTextAttrs aliasText="false" rotation="true" lineSpacing="1.65" face="TimesNewRomanPSMT" fillColor="#FFCC66" url="http://ya.ru"/>
+                                                       </textAttrs>
+                                                  </DOMTextRun>
+                                                  <DOMTextRun>
+                                                       <characters>fgf</characters>
+                                                       <textAttrs>
+                                                            <DOMTextAttrs aliasText="false" rotation="true" lineSpacing="7.6" size="54" face="TimesNewRomanPSMT" fillColor="#FFCC66" url="http://ya.ru"/>
+                                                       </textAttrs>
+                                                  </DOMTextRun>
+                                             </textRuns>
+                                        </DOMStaticText>
+                                        <DOMTLFText referenceID="F31122F9-5D26-0546-A0DA-5A70245EC9D8" right="3533" bottom="3816">
+                                             <matrix>
+                                                  <Matrix tx="586.95" ty="62.75"/>
+                                             </matrix>
+                                             <tlfFonts>
+                                                  <TLFFont platformName="Times New Roman" psName="TimesNewRomanPSMT"/>
+                                             </tlfFonts>
+                                             <markup><tlfTextObject type="Paragraph" editPolicy="readSelect" columnCount="1" columnGap="20" verticalAlign="top" firstBaselineOffset="auto" paddingLeft="2" paddingTop="2" paddingRight="2" paddingBottom="2" background="false" backgroundColor="#ffffff" backgroundAlpha="1" border="false" borderColor="#000000" borderAlpha="1" borderWidth="1" paddingLock="false" multiline="true" antiAliasType="advanced" embedFonts="true"><TextFlow blockProgression="tb" locale="en_US" whiteSpaceCollapse="preserve" version="2.0.0" xmlns="http://ns.adobe.com/textLayout/2008"><p direction="ltr" paragraphEndIndent="0" paragraphSpaceAfter="0" paragraphSpaceBefore="0" paragraphStartIndent="0" textAlign="start" textAlignLast="start" textIndent="0" textJustify="interWord"><span color="#0066cc" fontFamily="Times New Roman" fontSize="54" fontStyle="normal" fontWeight="normal" kerning="auto" lineHeight="120%" textAlpha="1" textRotation="auto" trackingRight="0%">fdf</span></p><p direction="ltr" paragraphEndIndent="0" paragraphSpaceAfter="0" paragraphSpaceBefore="0" paragraphStartIndent="0" textAlign="start" textAlignLast="start" textIndent="0" textJustify="interWord"><span color="#0066cc" fontFamily="Times New Roman" fontSize="54" fontStyle="normal" fontWeight="normal" kerning="auto" lineHeight="120%" lineThrough="false" locale="en_US" textAlpha="1" textDecoration="none" textRotation="auto" trackingRight="0%"></span></p></TextFlow></tlfTextObject></markup>
+                                        </DOMTLFText>
+                                   </elements>
+                              </DOMFrame>
+                         </frames>
+                    </DOMLayer>
+               </layers>
+          </DOMTimeline>
+     </timelines>
+     <PrinterSettings/>
+     <publishHistory>
+          <PublishItem publishSize="120103" publishTime="1407448787"/>
+          <PublishItem publishSize="122959" publishTime="1407448678"/>
+          <PublishItem publishSize="123008" publishTime="1407445413"/>
+          <PublishItem publishSize="122984" publishTime="1407445339"/>
+          <PublishItem publishSize="73600" publishTime="1407444385"/>
+          <PublishItem publishSize="57956" publishTime="1407443580"/>
+          <PublishItem publishSize="57967" publishTime="1407443447"/>
+          <PublishItem publishSize="57968" publishTime="1407443196"/>
+          <PublishItem publishSize="57965" publishTime="1407443071"/>
+          <PublishItem publishSize="57940" publishTime="1407442863"/>
+     </publishHistory>
+     <swcCache>
+          <Swc hashKey="5hQS0VF2RpEUrBqYgohhO." href="pxyrk9ye04.swc">
+               <classDefinitions>
+                    <ClassDefinition value="fl.video.CuePointType"/>
+                    <ClassDefinition value="fl.video.ParseResults"/>
+                    <ClassDefinition value="fl.video.VideoPlayerState"/>
+                    <ClassDefinition value="fl.video.NCManagerNativeShim"/>
+                    <ClassDefinition value="fl.video.VideoError"/>
+                    <ClassDefinition value="fl.video.VideoEvent"/>
+                    <ClassDefinition value="fl.video.AutoLayoutEvent"/>
+                    <ClassDefinition value="fl.video.SkinErrorEvent"/>
+                    <ClassDefinition value="fl.video.VolumeBarAccImpl"/>
+                    <ClassDefinition value="fl.video.FPADManager"/>
+                    <ClassDefinition value="fl.video.SeekBarAccImpl"/>
+                    <ClassDefinition value="fl.video.VideoScaleMode"/>
+                    <ClassDefinition value="fl.video.ReconnectClient"/>
+                    <ClassDefinition value="fl.video.ConnectClient"/>
+                    <ClassDefinition value="fl.livepreview.LivePreviewParent"/>
+                    <ClassDefinition value="fl.video.NCManagerNative"/>
+                    <ClassDefinition value="fl.video.VideoPlayerClient"/>
+                    <ClassDefinition value="fl.video.LayoutEvent"/>
+                    <ClassDefinition value="fl.video.Icon"/>
+                    <ClassDefinition value="fl.video.ControlData"/>
+                    <ClassDefinition value="fl.video.VideoState"/>
+                    <ClassDefinition value="fl.video.QueuedCommand"/>
+                    <ClassDefinition value="fl.video.VideoProgressEvent"/>
+                    <ClassDefinition value="fl.video.VideoAlign"/>
+                    <ClassDefinition value="fl.video.CuePointManager"/>
+                    <ClassDefinition value="fl.video.IVPEvent"/>
+                    <ClassDefinition value="fl.video.VideoPlayer"/>
+                    <ClassDefinition value="fl.video.UIManager"/>
+                    <ClassDefinition value="fl.video.ConnectClientNative"/>
+                    <ClassDefinition value="fl.video.INCManager"/>
+                    <ClassDefinition value="fl.video.SoundEvent"/>
+                    <ClassDefinition value="fl.video.FLVPlayback"/>
+                    <ClassDefinition value="fl.video.MetadataEvent"/>
+                    <ClassDefinition value="fl.video.SMILManager"/>
+                    <ClassDefinition value="fl.video.NCManager"/>
+                    <ClassDefinition value="fl.livepreview.IEditContextV1"/>
+                    <ClassDefinition value="fl.livepreview.IPreviewInterface"/>
+                    <ClassDefinition value="fl.video.CuePointType"/>
+                    <ClassDefinition value="fl.video.VideoPlayerState"/>
+                    <ClassDefinition value="fl.video.ControlData"/>
+                    <ClassDefinition value="fl.video.CuePointManager"/>
+                    <ClassDefinition value="fl.video.UIManager"/>
+                    <ClassDefinition value="fl.video.INCManager"/>
+                    <ClassDefinition value="fl.video.VideoState"/>
+                    <ClassDefinition value="fl.livepreview.EditContextFlags"/>
+                    <ClassDefinition value="fl.video.VideoScaleMode"/>
+                    <ClassDefinition value="fl.video.QueuedCommand"/>
+                    <ClassDefinition value="fl.video.IVPEvent"/>
+                    <ClassDefinition value="fl.video.ParseResults"/>
+                    <ClassDefinition value="fl.video.SMILManager"/>
+                    <ClassDefinition value="fl.video.FPADManager"/>
+                    <ClassDefinition value="fl.video.VideoAlign"/>
+                    <ClassDefinition value="fl.video.ConnectClient"/>
+                    <ClassDefinition value="fl.video.ReconnectClient"/>
+                    <ClassDefinition value="fl.video.VideoPlayerClient"/>
+                    <ClassDefinition value="fl.video.LayoutEvent"/>
+                    <ClassDefinition value="fl.video.SoundEvent"/>
+                    <ClassDefinition value="fl.video.VolumeBarAccImpl"/>
+                    <ClassDefinition value="fl.video.SeekBarAccImpl"/>
+                    <ClassDefinition value="fl.livepreview.IVideoInterfaceV1"/>
+                    <ClassDefinition value="fl.video.VideoError"/>
+                    <ClassDefinition value="UIManagerStage"/>
+                    <ClassDefinition value="fl.video.NCManager"/>
+                    <ClassDefinition value="fl.video.VideoEvent"/>
+                    <ClassDefinition value="fl.video.MetadataEvent"/>
+                    <ClassDefinition value="fl.video.VideoProgressEvent"/>
+                    <ClassDefinition value="fl.video.AutoLayoutEvent"/>
+                    <ClassDefinition value="fl.video.SkinErrorEvent"/>
+                    <ClassDefinition value="fl.video.VideoPlayer"/>
+                    <ClassDefinition value="FLVPlaybackStageLivePreview"/>
+                    <ClassDefinition value="fl.stage.video.StopButtonDown"/>
+                    <ClassDefinition value="fl.stage.video.StopButtonNormal"/>
+                    <ClassDefinition value="fl.stage.video.StopButtonOver"/>
+                    <ClassDefinition value="fl.video.FLVPlayback"/>
+                    <ClassDefinition value="fl.stage.video.ComponentVersionView"/>
+                    <ClassDefinition value="fl.stage.video.BackgroundBox"/>
+                    <ClassDefinition value="FLVPlaybackStage"/>
+                    <ClassDefinition value="fl.livepreview.LivePreviewParent"/>
+                    <ClassDefinition value="fl.video.Icon"/>
+               </classDefinitions>
+          </Swc>
+     </swcCache>
+</DOMDocument>

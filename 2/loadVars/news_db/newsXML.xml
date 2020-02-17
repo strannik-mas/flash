@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="windows-1251"?><flashxml>	<message id="1" title="%CF%E5%F0%E2%E0%FF+%ED%EE%E2%EE%F1%F2%FC" author="%C2%E0%F1%E8%EB%E8%E9+%CF%F3%EF%EA%E8%ED" image="image1.jpg" >You+create+and+manipulate+your+documents+and+files+using+various+elements+such+as+panels%2C+bars%2C+and+windows.+Any+arrangement+of+these+elements+is+called+a+workspace.+When+you+first+start+an+Adobe+Creative+Suite+component%2C+you+see+the+default+workspace%2C+which+you+can+customize+for+the+tasks+you+perform+there.+For+instance%2C+you+can+create+one+workspace+for+editing+and+another+for+viewing%2C+save+them%2C+and+switch+between+them+as+you+work.
+</message><message id="2" title="%C2%F2%EE%F0%E0%FF+%ED%EE%E2%EE%F1%F2%FC" author="%D1%E5%EC%E5%ED+%CF%F3%EF%EA%E8%ED" image="image2.jpg" >Although+default+workspaces+vary+across+Flash%2C+Illustrator%2C+InCopy%2C+InDesign%2C+and+Photoshop%2C+you+manipulate+the+elements+much+the+same+way+in+all+of+them.+The+Photoshop+default+workspace+is+typical%3A
+</message>
+	<message id="3" title="%D2%F0%E5%F2%FC%FF+%ED%EE%E2%EE%F1%F2%FC" author="%C8%EE%F1%E8%F4+%CF%F3%EF%EA%E8%ED" image="image3.jpg" >The+Tools+panel+%28called+the+Tools+palette+in+Photoshop%29+contains+tools+for+creating+and+editing+images%2C+artwork%2C+page+elements%2C+and+so+on.+Related+tools+are+grouped+together.
+</message>
+	<message id="4" title="%D7%E5%F2%E2%E5%F0%F2%E0%FF+%ED%EE%E2%EE%F1%F2%FC" author="%D4%F0%E0%ED%F6+%CF%F3%EF%EA%E8%ED" image="image4.jpg" >Panels+%28called+palettes+in+Photoshop%29+help+you+monitor+and+modify+your+work.+Examples+include+the+Timeline+in+Flash+and+the+Layers+palette+in+Photoshop.+Certain+panels+are+displayed+by+default%2C+but+you+can+add+any+panel+by+selecting+it+from+the+Window+menu.+Many+panels+have+menus+with+panel-specific+options.+Panels+can+be+grouped%2C+stacked%2C+or+docked.
+</message>
+	<message id="5" title="%CF%FF%F2%E0%FF+%ED%EE%E2%EE%F1%F2%FC" author="%CC%E3%E0%ED%E3%E0+%CF%F3%EF%EA%E8%ED" image="image1.jpg" >When+rulers+show%2C+they+appear+along+the+top+and+left+sides+of+the+document.+You+can+change+the+unit+of+measure+used+in+the+rulers+from+the+default+of+pixels+to+another+unit.+When+you+move+an+element+on+the+Stage+with+the+rulers+displayed%2C+lines+indicating+the+element%92s+dimensions+appear+on+the+rulers.
+</message>
+	<message id="6" title="%D8%E5%F1%F2%E0%FF+%ED%EE%E2%EE%F1%F2%FC" author="%C4%E6%EE%F0%E4%E6+%CF%F3%EF%EA%E8%ED" image="image2.jpg" >To+move+a+guide%2C+click+anywhere+on+the+ruler+with+the+Selection+tool+and+drag+the+guide+to+the+desired+place+on+the+Stage.+To+remove+a+guide%2C+use+the+Selection+tool+with+guides+unlocked+to+drag+the+guide+to+the+horizontal+or+vertical+ruler.
+</message>
+	<message id="7" title="%D1%E5%E4%FC%EC%E0%FF+%ED%EE%E2%EE%F1%F2%FC" author="%C0%ED%F2%F3%E0%ED+%CF%F3%EF%EA%E8%ED" image="image3.jpg" >To+match+the+shortcuts+you+use+in+other+applications%2C+or+to+streamline+your+workflow%2C+select+keyboard+shortcuts.+By+default%2C+Flash+uses+built%3Fin+keyboard+shortcuts+designed+for+the+application.+You+can+also+select+a+built%3Fin+keyboard+shortcut+set+from+one+of+several+graphics+applications.+
+</message>
+	<message id="8" title="%CF%EE%F1%EB%E5%E4%ED%FF%FF+%ED%EE%E2%EE%F1%F2%FC" author="%D3%FB%FB%FB%FD%F5+%CF%F3%EF%EA%E8%ED" image="image4.jpg" >Select+a+name+and+location+for+the+exported+HTML+file.+The+default+file+name+is+the+name+of+the+selected+shortcut+set.+Click+Save.+Find+the+exported+file+in+the+folder+you+selected+and+open+the+file+in+a+web+browser.+
+</message>
+	<message id="12" title="%D0%E0%F1%EF%EE%F1%EB%E5%E4%ED%FF%FF+%ED%EE%E2%EE%F1%F2%FC%0D" author="%C5%F9%E5+%EE%E4%E8%ED+%EF%F3%EF%EA%E8%ED%0D" image="image2.jpg" >Select+Edit+%3E+Keyboard+Shortcuts+%28Windows%29+or+Flash+%3E+Keyboard+Shortcuts+%28Macintosh%29.+%0DThe+Keyboard+Shortcuts+dialog+box+appears.%0DUse+the+following+options+to+add%2C+delete%2C+or+edit+keyboard+shortcuts%3A+
+</message>
+	<message id="21" title="wert%0D" author="12345%0D" image="sdefg" >%0D%0Dsdfgsdfgsdfgs%3C++dfgs+%3E++dfg
+</message>
+</flashxml>

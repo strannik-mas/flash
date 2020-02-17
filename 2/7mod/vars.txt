@@ -1,0 +1,1 @@
+var1=48&var2=10&var3=vasya

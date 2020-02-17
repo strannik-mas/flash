@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<flashxml>
+	<news>
+		<message time="10:20:02" author="Poupkin">Мама мыла раму</message>
+		<message time="11:20:02" author="Poupkin">Траляля</message>
+		<message time="12:20:02" author="Poupkin">Трулюлю</message>
+	</news>
+	<man>
+		<age>24</age>
+		<gender>m</gender>
+		<name>Джон</name>
+
+	</man>
+	<man>
+		<age>20</age>
+		<name>Люси</name>
+		<gender>f</gender>
+	</man>
+	<man>
+		<age>34</age>
+		<name>Alice</name>
+		<gender>f</gender>
+	</man>
+</flashxml>

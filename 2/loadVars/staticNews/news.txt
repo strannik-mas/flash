@@ -1,0 +1,1 @@
+title1=Ïåğâàÿ íîâîñòü&msg1=This section provides syntax, usage information, and code samples for global functions and properties (those elements that do not belong to an ActionScript™ class); compiler directives; and for the constants, operators, statements, and keywords used in ActionScript™ and defined in the ECMAScript (ECMA-262) edition 4 draft language specification

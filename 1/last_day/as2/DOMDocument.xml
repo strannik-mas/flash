@@ -1,0 +1,58 @@
+<DOMDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" currentTimeline="1" xflVersion="2.1" creatorInfo="Adobe Flash Professional CS5.5" platform="Windows" versionInfo="Saved by Adobe Flash Windows 11.5 build 349" majorVersion="11" minorVersion="5" buildNumber="349" nextSceneIdentifier="2" playOptionsPlayLoop="false" playOptionsPlayPages="false" playOptionsPlayFrameActions="false">
+     <symbols>
+          <Include href="Tween 1.xml" itemIcon="1" loadImmediate="false" itemID="53e499b0-000001da" lastModified="1407490480"/>
+     </symbols>
+     <timelines>
+          <DOMTimeline name="Scene 1" currentFrame="9">
+               <layers>
+                    <DOMLayer name="Layer 3" color="#FF800A" current="true" isSelected="true">
+                         <frames>
+                              <DOMFrame index="0" duration="9" name="kuku" labelType="name" keyMode="9728">
+                                   <elements/>
+                              </DOMFrame>
+                              <DOMFrame index="9" duration="21" keyMode="9728">
+                                   <Actionscript>
+                                        <script><![CDATA[stop()
+gotoAndPlay("kuku");]]></script>
+                                   </Actionscript>
+                                   <elements/>
+                              </DOMFrame>
+                         </frames>
+                    </DOMLayer>
+                    <DOMLayer name="Layer 1" color="#4FFF4F">
+                         <frames>
+                              <DOMFrame index="0" duration="29" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+                                   <elements>
+                                        <DOMSymbolInstance libraryItemName="Tween 1" symbolType="graphic" loop="loop">
+                                             <matrix>
+                                                  <Matrix tx="56" ty="194.5"/>
+                                             </matrix>
+                                             <transformationPoint>
+                                                  <Point/>
+                                             </transformationPoint>
+                                        </DOMSymbolInstance>
+                                   </elements>
+                              </DOMFrame>
+                              <DOMFrame index="29" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+                                   <elements>
+                                        <DOMSymbolInstance libraryItemName="Tween 1" symbolType="graphic" loop="loop">
+                                             <matrix>
+                                                  <Matrix tx="446" ty="194.5"/>
+                                             </matrix>
+                                             <transformationPoint>
+                                                  <Point/>
+                                             </transformationPoint>
+                                        </DOMSymbolInstance>
+                                   </elements>
+                              </DOMFrame>
+                         </frames>
+                    </DOMLayer>
+               </layers>
+          </DOMTimeline>
+     </timelines>
+     <PrinterSettings/>
+     <publishHistory>
+          <PublishItem publishSize="757" publishTime="1407491737"/>
+          <PublishItem publishSize="741" publishTime="1407490574"/>
+     </publishHistory>
+</DOMDocument>

@@ -1,0 +1,2 @@
+http://www.cbr.ru/currency_base/XML_daily.asp
+"http://feeds.feedburner.com/afisha_cinema?format=xml"
